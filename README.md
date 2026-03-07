@@ -1,29 +1,29 @@
 # mail-assistant
 
-An AI-powered mail assistant that runs inside [Claude Code](https://claude.ai/code). Supports multiple mail clients via MCP (Model Context Protocol).
+基于 [Claude Code](https://claude.ai/code) 的 AI 邮件助手，通过 MCP（Model Context Protocol）支持多种邮件客户端。
 
-## Features
+## 功能
 
-- Daily email briefing on startup
-- Smart filtering: academic, work, and action-required emails highlighted
-- Persistent TODO tracking across sessions
-- Send, reply, forward emails directly from Claude
-- Calendar event management
+- 每次启动自动生成当日邮件简报
+- 智能过滤：标注学术、工作、需要行动的重要邮件
+- 跨会话持久化待办事项
+- 直接在 Claude 中发送、回复、转发邮件
+- 日历事件管理
 
-## Requirements
+## 依赖
 
 - [Claude Code](https://claude.ai/code)
-- A supported mail client (see below)
+- 支持的邮件客户端（见下表）
 - Node.js >= 18
 
-## Supported Mail Clients
+## 支持的邮件客户端
 
-| Client | Status | Platform |
-|--------|--------|----------|
-| Thunderbird | ✅ Available | Linux, macOS |
-| Outlook | 🔜 Coming soon | Windows, macOS |
+| 客户端 | 状态 | 平台 |
+|--------|------|------|
+| Thunderbird | ✅ 可用 | Linux、macOS |
+| Outlook | 🔜 即将支持 | Windows、macOS |
 
-## Getting Started
+## 快速开始
 
 ```bash
 git clone https://github.com/lihaokun/mail-assistant.git
@@ -31,10 +31,10 @@ cd mail-assistant
 claude
 ```
 
-Claude will guide you through the setup on first launch.
+首次启动时，Claude 会自动引导完成安装配置。
 
-## How It Works
+## 工作原理
 
-On first launch, Claude detects that no MCP is configured and walks you through installing your preferred mail client plugin. Once installed, every subsequent launch automatically delivers a daily briefing of your emails.
+首次启动时，Claude 检测到未配置 MCP，会引导你选择并安装对应的邮件客户端插件。安装完成后，每次启动自动进入邮件助手模式，汇报当日邮件。
 
-The assistant behavior is defined in `CLAUDE.md` and plugin installation instructions live in `plugins/`.
+助手行为定义在 `CLAUDE.md` 中，各客户端的安装说明在 `plugins/` 目录下。
