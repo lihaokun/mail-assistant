@@ -6,10 +6,15 @@
 
 ### 1. 检测安装状态
 
-检查 `.mcp.json` 是否存在且配置了至少一个 mail MCP：
+检查 `.mcp.json` 中是否配置了至少一个邮件 MCP（即 mcpServers 中包含以下任一项）：
 
-- **未安装** → 进入安装模式
-- **已安装** → 进入邮件助手模式
+- `outlook`：command 为 `outlook-mcp-server`
+- `thunderbird-mail`：command 为 `node`，args 含 `mcp-bridge.cjs`
+
+判定结果：
+
+- **未配置邮件 MCP**（`.mcp.json` 不存在，或存在但无上述配置）→ 进入安装模式
+- **已配置** → 进入邮件助手模式
 
 ---
 
@@ -22,7 +27,7 @@
 询问用户要启用哪些邮件客户端：
 
 - **Thunderbird**（Linux/macOS，开源）→ 参考 `plugins/thunderbird.md`
-- **Outlook**（即将支持）
+- **Outlook**（Windows，需 Outlook 桌面版）→ 参考 `plugins/outlook.md`
 
 ### Step 2：执行安装
 

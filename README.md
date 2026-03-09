@@ -14,14 +14,13 @@
 
 - [Claude Code](https://claude.ai/code)
 - 支持的邮件客户端（见下表）
-- Node.js >= 18
 
 ## 支持的邮件客户端
 
-| 客户端 | 状态 | 平台 |
-|--------|------|------|
-| Thunderbird | ✅ 可用 | Linux、macOS |
-| Outlook | 🔜 即将支持 | Windows、macOS |
+| 客户端 | 状态 | 平台 | MCP 插件 |
+|--------|------|------|----------|
+| Thunderbird | ✅ 可用 | Linux、macOS | `thunderbird-mcp` (npm) |
+| Outlook | ✅ 可用 | Windows | [`outlook-mcp-server`](https://pypi.org/project/outlook-mcp-server/) (pip) |
 
 ## 快速开始
 
