@@ -1,3 +1,26 @@
+# Generated mail state and local MCP checkout
 briefings/
 .mcp.json
 thunderbird-mcp/
+
+# Personal data and machine-local agent configuration
+contacts.md
+.claude/settings.local.json
+.codex/config.toml
+
+# Private mail data, attachments, and exports
+private/
+attachments/
+downloads/
+exports/
+*-receipts/
+*-image/
+*.eml
+*.mbox
+*.pst
+*.ost
+
+# Local environment files may contain credentials
+.env
+.env.*
+!.env.example

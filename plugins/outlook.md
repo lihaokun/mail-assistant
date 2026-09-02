@@ -36,9 +36,9 @@ outlook-mcp-server --version
 }
 ```
 
-### 4. 重启 Claude Code
+### 4. 重启代理
 
-安装完成后需重启 Claude Code 以加载 MCP 服务。
+安装完成后需重启正在使用的代理（Claude Code 或 Codex）以加载 MCP 服务。
 
 ## 可用工具
 
